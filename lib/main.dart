@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:giga_sport_flutter/screens/homepage_navigation.dart';
+import 'package:giga_sport_flutter/utilities/constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: myTheme,
       debugShowCheckedModeBanner: false,
-      home: HomePageScreen(),
+      home: const HomePageScreen(),
     );
   }
 }

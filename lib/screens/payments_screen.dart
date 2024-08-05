@@ -1,10 +1,15 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:giga_sport_flutter/widgets/pay_buttons.dart';
 
 class PaymentsScreen extends StatelessWidget {
   const PaymentsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
+    String os = Platform.operatingSystem;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -76,6 +81,8 @@ class PaymentsScreen extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(height: 20),
+        Platform.isIOS ? applePayButton : googlePayButton,
       ],
     );
   }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308476875815",
+    "project_id": "giga-sport-line",
+    "storage_bucket": "giga-sport-line.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308476875815:android:277b4c99a1c9af0c796a02",
+        "android_client_info": {
+          "package_name": "com.example.giga_sport_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308476875815-l38cka0cj86k2p3mtpvd3bqvvccm3uh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giga_sport_flutter",
+            "certificate_hash": "52a4b3254e1f6da579b1eb4e3700ee5eb50dcb7a"
+          }
+        },
+        {
+          "client_id": "308476875815-or4deut0re107esdjhfmrit5c0sjfepv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnmYY4zakN9UmCkuT6gl_7fmGyieoHiR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308476875815-or4deut0re107esdjhfmrit5c0sjfepv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

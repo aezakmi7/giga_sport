@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:giga_sport_flutter/screens/homescreen.dart';
 import 'package:giga_sport_flutter/screens/payments_screen.dart';
+import 'package:giga_sport_flutter/screens/profile_screen.dart';
 
 class HomePageScreen extends StatefulWidget {
   const HomePageScreen({super.key});
@@ -14,15 +15,20 @@ class _HomePageScreenState extends State<HomePageScreen> {
 
   final List<Widget> _screens = [
     HomeScreen(),
-    PaymentsScreen(),
+    const PaymentsScreen(),
+    const ProfileScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text(_currentIndex == 0 ? 'Головна' : 'Абонементи'),
+        centerTitle: false,
+        title: Text(_currentIndex == 0
+            ? 'Головна'
+            : _currentIndex == 1
+                ? 'Абонементи'
+                : 'Мій профіль'),
       ),
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -32,7 +38,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
             _currentIndex = index;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Головна',
@@ -40,6 +46,10 @@ class _HomePageScreenState extends State<HomePageScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.payment),
             label: 'Абонементи',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Мій профіль',
           ),
         ],
       ),
